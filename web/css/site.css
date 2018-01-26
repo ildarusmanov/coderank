@@ -12,6 +12,13 @@ body {
 
 .wrap > .container {
     padding: 70px 15px 20px;
+    width: auto;
+}
+.table{
+    width: auto;
+}
+.table > tbody > tr > td{
+    border-top: 0;
 }
 
 .footer {

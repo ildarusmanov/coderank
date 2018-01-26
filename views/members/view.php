@@ -10,7 +10,7 @@ $this->title = $member->full_name;
 <a href="<?= Url::to(['index']) ?>">Back to members list</a>
 -->
 <h2>Rating</h2>
-<table class="table table-striped">
+<table class="table">
     <thead>
         <th>Type</th>
         <th>Rating</th>

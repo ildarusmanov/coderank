@@ -9,7 +9,7 @@ $this->title = $ratingContest->title;
 <a href="<?= Url::to(['index']) ?>">Back to contests list</a>
 -->
 
-<table class="table table-striped">
+<table class="table">
     <thead>
         <tr>
             <th>Full Name</th>

@@ -8,7 +8,7 @@ $this->title = 'Members list';
 <h1><?= $this->title ?></h1>
 
 
-<table class="table table-striped">
+<table class="table">
     <thead>
         <tr>
             <th>Full Name</th>
