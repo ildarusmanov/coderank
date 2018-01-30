@@ -1,3 +1,7 @@
 $(document).ready(function(){
-    $('#members-table').DataTable();
+    $('.data-table').DataTable({
+        "paging": false,
+        "info": false,
+        "bFilter": false,
+    });
 });

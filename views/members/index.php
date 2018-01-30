@@ -8,7 +8,7 @@ $this->title = 'Members list';
 <h1><?= $this->title ?></h1>
 
 
-<table class="table" id="members-table">
+<table class="table table-bordered table-hover data-table" style="width:100%;">
     <thead>
         <tr>
             <th>Full Name</th>
@@ -26,33 +26,25 @@ $this->title = 'Members list';
                 <td>
                     <a href="<?= Url::to(['view', 'id' => $member->id]) ?>"><?= $member->full_name ?></a>
                 </td>
+                
                 <td>
                     <?php if (isset($mR['https://topcoder.com'])): ?>
-                        <a href="<?= $mR['https://topcoder.com']->link ?>" target="_blank">
-                            <?= $mR['https://topcoder.com']->rating ?> /
-                            <?= $mR['https://topcoder.com']->rank ?>
-                        </a>
+                        <a href="<?= $mR['https://topcoder.com']->link ?>" target="_blank"><?= $mR['https://topcoder.com']->rating ?></a>
                     <?php else: ?>
                         -
                     <?php endif; ?>
                 </td>
+
                 <td>
                     <?php if (isset($mR['http://codeforces.com'])): ?>
-                        <a href="<?= $mR['http://codeforces.com']->link ?>" target="_blank">
-                            <?= $mR['http://codeforces.com']->rating ?> / 
-                            <?= $mR['http://codeforces.com']->rank ?>
-                        </a>
+                        <a href="<?= $mR['http://codeforces.com']->link ?>" target="_blank"><?= $mR['http://codeforces.com']->rating ?></a>
                     <?php else: ?>
                         -
                     <?php endif; ?>
                 </td>
                 <td>
-                   
                     <?php if (isset($mR['http://atcoder.jp'])): ?>
-                        <a href="<?= $mR['http://atcoder.jp']->link ?>" target="_blank">
-                            <?= $mR['http://atcoder.jp']->rating ?> /
-                            <?= $mR['http://atcoder.jp']->rank ?>
-                        </a>
+                        <a href="<?= $mR['http://atcoder.jp']->link ?>" target="_blank"><?= $mR['http://atcoder.jp']->rating ?></a>
                     <?php else: ?>
                         -
                     <?php endif; ?>

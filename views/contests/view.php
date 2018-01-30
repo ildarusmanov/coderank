@@ -5,15 +5,12 @@ $this->title = $ratingContest->title;
 ?>
 <h1><?= $this->title ?></h1>
 
-<!--
-<a href="<?= Url::to(['index']) ?>">Back to contests list</a>
--->
-
-<table class="table">
+<table class="table table-bordered table-hover data-table" width="100%">
     <thead>
         <tr>
             <th>Full Name</th>
             <th>Rating</th>
+            <th>Rating update</th>
             <th>Rank</th>
         </tr>
     </thead>
@@ -21,12 +18,15 @@ $this->title = $ratingContest->title;
         <?php foreach ($memberContests as $memberContest): ?>
             <tr>
                 <td><a href="<?= Url::to(['/members/view', 'id' => $memberContest->member_id]) ?>"><?= $memberContest->member->full_name ?></a></td>
-                <td><?= $memberContest->rating ?>
+                <td><?= $memberContest->rating ?></td>
+                <td>
                     <?php if ($memberContest->ratingsDiff > 0): ?>
                         <font color="green">+<?= $memberContest->ratingsDiff ?></font>
                     <?php elseif($memberContest->ratingsDiff < 0): ?>
                         <font color="red"><?= $memberContest->ratingsDiff ?></font>
-                    <?php endif; ?>    
+                    <?php else: ?>
+                        <font color="silver">0</font>
+                    <?php endif; ?>  
                 </td>
                 <td><?= $memberContest->rank ?></td>
             </tr>
