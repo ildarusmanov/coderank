@@ -43,7 +43,7 @@ $this->title = $member->full_name;
             <tr>
                 <td><?= $contest->ratingContest->date ?></td>
                 <td><a href="<?= $contest->ratingContest->rating->link ?>" target="_blank"><?= $contest->ratingContest->rating->title ?></a></td>
-                <td><a href="<?= Url::to(['/contests/view', 'id' => $contest->rating_contest_id]) ?>" target="_blank"><?= $contest->ratingContest->title ?></a></td>
+                <td><a href="<?= Url::to(['/contests/view', 'id' => $contest->rating_contest_id]) ?>"><?= $contest->ratingContest->title ?></a></td>
                 <td><?= $contest->rating ?>
                     <?php if ($contest->ratingsDiff > 0): ?>
                         <font color="green">+<?= $contest->ratingsDiff ?></font>

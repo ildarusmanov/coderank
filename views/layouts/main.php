@@ -63,6 +63,10 @@ AppAsset::register($this);
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
+
+        <p class="text-muted">
+          Updated at <?= date('d.m.Y H:i', filemtime(\Yii::getAlias("@app/web/rank_update.log"))) ?>
+        </p>
     </div>
 </div>
 
