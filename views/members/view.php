@@ -11,9 +11,11 @@ $this->title = $member->full_name;
   <div class="panel-body">
 <table class="table table-bordered table-hover" style="width: 100%;">
     <thead>
-        <th>Type</th>
-        <th>Rating</th>
-        <th>Rank</th>
+        <tr>
+            <th>Type</th>
+            <th>Rating</th>
+            <th>Rank</th>
+        </tr>
     </thead>
     <tbody>
         <?php foreach ($member->memberRatings as $mr): ?>
