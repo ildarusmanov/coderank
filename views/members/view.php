@@ -32,7 +32,7 @@ $this->title = $member->full_name;
 
 
 <div class="panel panel-default">
-  <div class="panel-heading">Contests</div>
+  <div class="panel-heading">Contests history</div>
   <div class="panel-body">
 <table class="table table-bordered table-hover" style="width:100%;">
     <thead>
