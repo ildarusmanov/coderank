@@ -10,6 +10,6 @@ $this->title = 'Contests list'
     'dataProvider' => $dataProvider,
     'summary' => '',
     'itemView' => '_contest.php',
-    'options' => ['tag' => 'table table-hover table-bordered', 'class' => 'table', 'style' => 'width: 100%;'],
+    'options' => ['tag' => 'table', 'class' => 'table table-hover table-bordered', 'style' => 'width: 100%;'],
     'itemOptions' => ['tag' => 'tr'],
 ]) ?>   
