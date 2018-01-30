@@ -67,5 +67,5 @@ $this->title = $member->full_name;
     </tbody>
 </table>
     </div>
-</font>
+</div>
 
