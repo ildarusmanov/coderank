@@ -24,6 +24,7 @@ class ContestsController extends \yii\web\Controller
         $memberContests = $ratingContest
             ->getMemberRatingContests()
             ->with('member')
+            ->orderBy("rating DESC")
             ->all();
 
         return $this->render('view', [
