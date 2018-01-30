@@ -34,7 +34,7 @@ $this->title = $member->full_name;
 <div class="panel panel-default">
   <div class="panel-heading">Contests</div>
   <div class="panel-body">
-<table class="table table-bordered table-hover data-table" width="100%">
+<table class="table table-bordered table-hover" width="100%">
     <thead>
         <tr>
             <th>Date</th>
